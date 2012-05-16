@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>Deals</title>
+	</head>
+	<body>
+		<div class="text">
+		<h1>
+			Deals
+		</h1><% @deals["deals"].each do |deal| %><% if deal["dealTypes"].blank? %><% elsif @type.index(deal["dealTypes"][0]["name"]) %><% @d = Choice.new( name: deal["merchant"]["name"], category: deal["dealTypes"][0]["name"], 
+							highlight: deal["highlightsHtml"], title: deal["title"],
+							 image: deal["mediumImageUrl"] )%><% @d.save%>
+		<ul>
+			<li>
+				<%= image_tag deal["mediumImageUrl"]%>
+			</li>
+			<li>
+				<%=link_to deal["title"], "/choices/#{@d.id}" %>
+			</li>
+			<li>Name: <%= deal["merchant"]["name"] %>
+			</li>
+			<li>Type: <%= deal["dealTypes"][0]["name"] %>
+			</li>
+			<li>More: <%= deal["highlightsHtml"].split('>').last.split('<').first%>
+			</li>
+		</ul><%end%><%end%>
+		<div class="text">
+	</body>
+</html>

@@ -1,0 +1,89 @@
+#wrap {
+	max-width: 800px;
+	max-height: 600px;
+	margin: 0 auto;
+}
+
+#pants {
+	
+	background-image: url(http://i.imgur.com/6JgIi.png);
+	background-size: 780px 600px;
+	margin-left: 10px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	
+}
+
+body {
+	background: -webkit-gradient(radial, 59 59, 853, 559 353, 40,  from(#98d5ea), to(#65a7bc));
+	font-family: sans-serif;
+	color: #A0A0BC;
+}
+
+img.groupon {
+	width: 100px;
+	float: right;
+	margin-top: 25px;
+}
+
+#address {
+	float: right;
+	text-align: right;
+	margin-top: -95px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	-webkit-border-radius: 6px;
+}
+
+.text {
+	background: #fff;
+	clear: both;
+	margin-top: -30px;
+	margin-bottom: 20px;
+	padding: 20px 0;
+	-webkit-border-radius: 6px;
+	overflow: hidden;
+}
+
+checkbox {
+	margin-top: 0px;
+}
+
+.text h1{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.text h2{
+	text-align: center;
+	margin-top: 0px;
+	margin-left: 0px;
+	max-width: 700px;
+}
+
+.text h3{
+	margin-left: 40px;
+	margin-top: -30px;
+}
+
+.text h4{
+	margin-left: 40px;
+}
+
+.text ul {
+	list-style: none;
+	
+}
+
+ul.left {
+	float: left;
+	margin-left: 40px;
+}
+
+ul.right {
+	float: right;
+	padding: 0px 100px 20px 20px;
+}
+

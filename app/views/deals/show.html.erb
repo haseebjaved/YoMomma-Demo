@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		
+		<div class="text">
+		<div id="pants">
+			<br>
+			<h1>
+				Yo, Momma!!!
+			</h1>
+			<br>
+			<h2>I got you this mother's day gift. You're the best!</h2>
+			<ul>
+				
+			<h2><% variable = Choice.find_by_id(params[:id])%><%= variable.name %></h2>
+			<li><center><%=image_tag variable.image%></center></li>			
+			<h2><%= variable.highlight.split('>').last.split('<').first%></h2>
+			<br>
+			<br>
+			<br>
+			<br><h4>Love you,</h4>
+			<br><h3>Little Billy</h3>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div></div><%= mail_to "yomomma@yomomma.com", "Mail this to yo momma!"%>
+	</body>
+</html>
